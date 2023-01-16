@@ -1,3 +1,6 @@
+@use "./config/rest.scss";
+@use "./config/variaveis.scss";
+
 body {
-    background-color: #dddd;
+    background-color: variaveis.$cor-de-fundo;
 }
