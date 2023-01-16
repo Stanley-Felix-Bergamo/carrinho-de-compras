@@ -1,6 +1,6 @@
 # Carrinho de compras
 
-<p>Carrinho de compras</p>
+<p>Landing page de site de Compras</p>
 
 <p>Saiba mais acessando o site <a href="https://carrinho-de-compras-7p3duswbw-stanley-felix-bergamo.vercel.app/">Clicando aki</a></p> 
 <div align="center" >
