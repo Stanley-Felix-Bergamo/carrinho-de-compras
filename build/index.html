@@ -12,25 +12,26 @@
 <body>
     <header>
         <div class="container">
-            <div id="menu-hamburguer">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
             <img src="./images/logo.png" alt="Logo de um peixe pulando">
             <h1>Stanley Pescaria</h1>
         </div>
-        <nav>
-            <ul>
-                <div class="container">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Varas</a></li>
-                    <li><a href="#">Molinetes</a></li>
-                    <li><a href="#">Carretilhas</a></li>
-                    <li><a href="#">Linhas</a></li>
-                </div>
+
+        <nav class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#">Home</a></li>
+                <li><a class="menu__item" href="#">Varas</a></li>
+                <li><a class="menu__item" href="#">Molinetes</a></li>
+                <li><a class="menu__item" href="#">Carretilhas</a></li>
+                <li><a class="menu__item" href="#">Linhas</a></li>
+                <li><a class="menu__item" href="#">Acessório</a></li>
+                <li><a class="menu__item" href="#">Vestuário</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
