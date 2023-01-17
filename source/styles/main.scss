@@ -39,6 +39,9 @@ header nav {
     ul {
         display: none;
         list-style: none;
+        .container {
+            justify-content: space-around;
+        }
     }
 
     ul li a {
