@@ -17,11 +17,20 @@ section {
     width: 100%;
     max-width: 1024px;
 }
-
-header .container {
-    cursor: pointer;
+.container-flex {
+    margin: 0 auto;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.icones {
+    display: flex;
+    justify-content: end;
+}
+
+header .container-flex {
+    cursor: pointer;
     .logo {
         display: inline-flex;
         align-items: center;
@@ -41,7 +50,7 @@ header .container {
         align-items: center;
 
         input {
-            width: 220px;
+            width: 400px;
             height: 26px;
         }
         img {
