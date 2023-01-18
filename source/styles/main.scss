@@ -51,10 +51,17 @@ header .container-flex {
 
         input {
             width: 400px;
-            height: 26px;
+            height: 36px;
+            border: 3px solid variaveis.$cor-primaria;
+        }
+        a {
+            background-color: variaveis.$cor-primaria;
+            height: 36px;
+            width: 42px;
         }
         img {
-            width: 26px;
+            margin: 5px 7px;
+            width: 25px;
         }
     }
 }
@@ -175,7 +182,7 @@ header nav {
         }
     }
 
-    header .container {
+    header .container-flex {
         justify-content: center;
         .icone {
             display: none;
@@ -189,7 +196,11 @@ header nav {
                 gap: 30px;
             }
         }
+        .pesquisa {
+            display: none;
+        }
     }
+    
     footer {
         display: none;
     }
