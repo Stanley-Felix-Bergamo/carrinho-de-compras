@@ -80,21 +80,21 @@
                         <h3>MOLINETE DAISEN MIDORI X 2000 - 7 ROLAMENTOS FREIO 4KG VELOCIDADE 5:1.1</h3>
 
                         <div class="preco">
-                            <h5><s> De R$ 249,90</s></h5>
-                            <h2>Por R$ 224,91</h2>
-                            <h5>R$ 224,91 em 10x de R$ 22,49 sem juros</h5>
-                            <h5>ou R$ 202,42 à vista 10% no Pix / Transferência *</h5>
+                            <h5>De R$ <span class="val">249,90</span></s></h5>
+                            <h2>Por R$ <span class="val">224,91</span></h2>
+                            <h5>R$ <span class="val">224,91</span> em 10x de R$ <span class="val">22,49 </span> sem juros</h5>
+                            <h5>ou R$<span class="val destac"> 202,42 </span> à vista 10% no Pix / Transferência *</h5>
                         </div>
 
                         <div class="quantidade">
                             <form>
                                 <p>Quantidade:</p>
-                                <select name="qtd">s
-                                    <option value="um">1 unidade</option>
-                                    <option value="dois">2 unidades</option>
-                                    <option value="tres">3 unidades</option>
-                                    <option value="quatro">4 unidades</option>
-                                    <option value="cinco">5 unidades</option>
+                                <select id="qtd" onchange="update()">
+                                    <option value="1">1 unidade</option>
+                                    <option value="2">2 unidades</option>
+                                    <option value="3">3 unidades</option>
+                                    <option value="4">4 unidades</option>
+                                    <option value="5">5 unidades</option>
                                 </select>
                             </form>
                         </div>
@@ -125,7 +125,7 @@
             <section id="conteudo">
                 <h2>Detalhes Do Produto</h2>
                 <hr>
-                
+
                 <h3>Molinete Daisen Midori X 2000 - 7 rolamentos Freio 4kg Velocidade 5:1.1</h3>
 
                 <p>Com design desafiador e oferecendo um projeto dedicado aos pescadores esportivos mais ousados, o
@@ -203,8 +203,11 @@
     <footer>
         <p>&copy; Stanley Pescaria 2023 - Todos os direitos reservados. </p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>

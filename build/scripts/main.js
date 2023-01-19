@@ -1,0 +1,1 @@
+function update(){var e=document.getElementById("qtd"),a=e.options[e.selectedIndex].value;$(".val").each(function(e,n){var t=n.innerHTML,t=parseFloat(t)*a;n.innerHTML=t.toFixed(2)})}$("document").ready(function(){});

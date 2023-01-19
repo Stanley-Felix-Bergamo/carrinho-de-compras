@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
-// const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify');
 
 function comprimeImagens() {
     return gulp.src('./source/images/*')
@@ -10,12 +10,11 @@ function comprimeImagens() {
         .pipe(gulp.dest('./build/images'));
 }
 
-// function comprimeJavascript() {
-//     return gulp.src('./source/scripts/*.js')
-//         .pipe(uglify())
-//         .pipe(obfuscate())
-//         .pipe(gulp.dest('./build/scripts'));
-// }
+function comprimeJavascript() {
+    return gulp.src('./source/scripts/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./build/scripts'));
+}
 
 function comPilaSassParaCss() {
     return gulp.src('./source/styles/main.scss')
@@ -31,5 +30,5 @@ function comPilaSassParaCss() {
 exports.default = function () {
     gulp.watch('./source/styles/*.scss', { ignoreInitial: false }, gulp.series(comPilaSassParaCss));
     gulp.watch('./source/images/*', { ignoreInitial: false }, gulp.series(comprimeImagens));
-    // gulp.watch('./source/scripts/*.js', { ignoreInitial: false }, gulp.series(comprimeJavascript));
+    gulp.watch('./source/scripts/*.js', { ignoreInitial: false }, gulp.series(comprimeJavascript));
 }
