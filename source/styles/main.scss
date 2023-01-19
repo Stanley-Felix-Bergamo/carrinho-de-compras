@@ -98,6 +98,11 @@ header nav {
             }
         }
         #compra {
+            .quantidade {
+                select {
+                    width: 90px;
+                }
+            }
             .preco {
                 padding-top: 3rem;
                 padding-bottom: 1rem;
@@ -115,7 +120,7 @@ header nav {
             }
             .pagamento,
             .frete {
-                padding-top: 1rem;
+                padding-top: 1.7rem;
             }
             .frete {
                 input {
@@ -133,20 +138,32 @@ header nav {
                     height: 32px;
                     width: 120px;
                 }
-                form{
-                    padding-top: 0.30rem;
+                form {
+                    padding-top: 0.3rem;
+                }
+            }
+            .pagamento {
+                a {
+                    text-decoration: none;
+                    color: variaveis.$cor-preto;
                 }
             }
         }
     }
 }
 
+#conteudo {
+    hr {
+        margin-bottom: 1.5rem;
+    }
+    p,h3,ul {
+        padding-bottom: 2rem;
+    }
+}
+
 footer {
     background-color: variaveis.$cor-primaria;
     padding: 2rem;
-    // position: fixed;
-    // bottom: 0;
-    // width: 100%;
     P {
         color: variaveis.$cor-branca;
         text-align: center;
