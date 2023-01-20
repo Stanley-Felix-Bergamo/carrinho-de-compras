@@ -75,9 +75,20 @@ header nav {
     ul {
         display: flex;
         list-style: none;
-        padding: 1rem;
+        padding: 0.5rem;
         gap: 3rem;
         justify-content: center;
+        li {
+            padding: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+                background-color: variaveis.$cor-branca;
+                a {
+                    color: variaveis.$cor-primaria;
+                }
+            }
+        }
         a {
             text-decoration: none;
             color: variaveis.$cor-branca;
@@ -101,6 +112,7 @@ header nav {
             .quantidade {
                 select {
                     width: 90px;
+                    cursor: pointer;
                 }
             }
             .preco {
@@ -120,6 +132,10 @@ header nav {
                 width: 100%;
                 margin-top: 2rem;
                 font-weight: 800;
+
+                &:hover {
+                    background-color: darken(variaveis.$cor-verde, 15%);
+                }
             }
             .pagamento,
             .frete {
@@ -140,6 +156,9 @@ header nav {
                     padding-top: 0;
                     height: 32px;
                     width: 120px;
+                    &:hover {
+                        background-color: darken(variaveis.$cor-primaria, 15%);
+                    }
                 }
                 form {
                     padding-top: 0.3rem;
@@ -179,7 +198,7 @@ footer {
     #produto {
         .row {
             display: block;
-            
+
             #imagem {
                 img {
                     width: 100%;
