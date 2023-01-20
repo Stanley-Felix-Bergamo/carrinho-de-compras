@@ -1,50 +1,45 @@
+let precos = [];
+let precoMultiplicado = [];
+let val = document.querySelectorAll('.val');
+
+
 $('document').ready(function () {
 
+    listandoPrecos();
 
 
 
-})
+});
 
-function update() {
+function listandoPrecos() {
 
+    $('.val').each(function (index, element) {
+        precos.push(element.innerHTML);
+    });
+}
+
+
+function multiplicandoPreco() {
 
     var unidade = document.getElementById('qtd');
     var valorIndex = unidade.options[unidade.selectedIndex].value;
 
 
+    precos.forEach(function (element) {
+        var multplica = parseFloat(element) * valorIndex;
 
-    $('.val').each(function (index, element) {
-
-
-        const preco = element.innerHTML;
-
-        var multplica = parseFloat(preco) * valorIndex;
-
-        element.innerHTML = multplica.toFixed(2);
-
-
-
-
-
-
+        precoMultiplicado.push(multplica);
     });
 
-
-
-
-
-
-
-
-    // const precoOriginal = 249.90;
-    // var precoAlterado = precoOriginal;
-
-    // if (valor > 1) {
-    //     var ola = document.querySelector('.val');
-    //     ola.innerHTML = precoAlterado * 2;
-    // }
-
-
-
-
 }
+
+
+function update() {
+    
+    multiplicandoPreco();
+    
+    for (var i = 0; i < val.length; i++) {
+        val[i].textContent = precoMultiplicado[i].toFixed(2);
+    }
+
+};
