@@ -2,9 +2,9 @@
 
 <p>Landing page de site de Compras</p>
 
-<p>Saiba mais acessando o site <a href="https://carrinho-de-compras-7p3duswbw-stanley-felix-bergamo.vercel.app/">Clicando aki</a></p> 
+<p>Saiba mais acessando o site <a href="https://carrinho-de-compras-j3v1tqjp2-stanley-felix-bergamo.vercel.app/">Clicando aki</a></p> 
 <div align="center" >
-<img src="" alt="Imagem em andamento">
+<img src="https://raw.githubusercontent.com/Stanley-Felix-Bergamo/carrinho-de-compras/main/source/images/mac.png" alt="Imagem em andamento">
 </div>
 
 
